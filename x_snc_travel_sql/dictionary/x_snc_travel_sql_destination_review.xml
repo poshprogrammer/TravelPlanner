@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Destination Review" max_length="40" name="x_snc_travel_sql_destination_review" type="collection">
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element label="Rating" max_length="15" name="rating" type="decimal"/>
+        <element attributes="edge_encryption_enabled=true" label="Review" max_length="1000" name="review" type="string"/>
+        <element attributes="encode_utf8=false" label="Reviewer" max_length="32" name="reviewer" reference="sys_user" type="reference"/>
+        <index name="index">
+            <element name="reviewer"/>
+        </index>
+    </element>
+</database>

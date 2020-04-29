@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Destination" max_length="40" name="x_snc_travel_sql_destination" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="Google Maps Link" max_length="1024" name="google_maps_link" type="url"/>
+        <element attributes="edge_encryption_enabled=true" label="Name" max_length="100" name="name" type="string"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+    </element>
+</database>
